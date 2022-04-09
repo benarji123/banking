@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.banking.TestCases.TC_Login_001">
+        <methods>
+          <include name="loginTest"/>
+          <include name="endRoport"/>
+          <include name="rearDown"/>
+          <include name="setExtent"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.banking.TestCases.TC_Login_001 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="2" name="Test1(failed)" parallel="tests">
+    <classes>
+      <class name="com.banking.TestCases.TC_CustomerCreation_002">
+        <methods>
+          <include name="customerCreation"/>
+          <include name="endRoport"/>
+          <include name="rearDown"/>
+          <include name="setExtent"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.banking.TestCases.TC_CustomerCreation_002 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
